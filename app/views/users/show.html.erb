@@ -8,3 +8,8 @@
 <p><strong>Facebook Access Token:</strong> <%= @user.facebook_access_token %></p>
 <p><strong>Name:</strong> <%= @user.name %></p>
 <p><strong>Location:</strong> <%= @user.location %></p>
+
+<%= link_to "Login with Facebook", 'https://www.facebook.com/dialog/oauth?
+    client_id=140451889436567
+   &redirect_uri=http://localhost:3000/auth/facebook
+   &state=SOME_ARBITRARY_BUT_UNIQUE_STRING' %>
